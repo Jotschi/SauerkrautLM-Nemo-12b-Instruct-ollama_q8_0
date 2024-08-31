@@ -1,28 +1,10 @@
 # Quantization and Conversion Scripts
 
-Model: VAGOsolutions/SauerkrautLM-Nemo-12b-Instruct to Q8_0
+* Quantized Model: [RichardErkhov/VAGOsolutions_-_SauerkrautLM-Nemo-12b-Instruct-gguf](https://huggingface.co/RichardErkhov/VAGOsolutions_-_SauerkrautLM-Nemo-12b-Instruct-gguf/blob/main/SauerkrautLM-Nemo-12b-Instruct.Q8_0.gguf)
 
-## Create Ollama Model
+* Unquantized Model: `VAGOsolutions/SauerkrautLM-Nemo-12b-Instruct`
 
-```bash
-# Install huggingface-cli
-python3.11 -m venv venv
-. venv/bin/activate
-pip install -r requirements.txt
-
-
-# Or download the already quantized model
-./download-quantized.sh
-
-# Create ollama model
-./start-ollama.sh
-./create-model.sh
-
-# Test the model
-./run-model.sh
-```
-
-## Quantize model
+## Quantize SauerkrautLM model
 
 ```bash
 # Download the Nemo 12b model
@@ -33,4 +15,27 @@ pip install -r requirements.txt
 
 # Quantize GGUF to Q8_0
 ./quantize-gguf.sh
+```
+## Download quantized model by RichardErkhov
+
+```bash
+./download-quantized.sh
+```
+
+## Create Ollama Model
+
+```bash
+# Install huggingface-cli
+python3.11 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+
+# Create ollama model
+./start-ollama.sh
+
+# You may need to update the `Modelfile` FROM path
+./create-model.sh
+
+# Test the model
+./run-model.sh
 ```
