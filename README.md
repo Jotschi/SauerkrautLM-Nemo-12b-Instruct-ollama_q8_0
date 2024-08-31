@@ -6,6 +6,15 @@ This repo contains scripts that can be used to convert the Mistral Nemo 12b Saue
 
 * Unquantized Model: `VAGOsolutions/SauerkrautLM-Nemo-12b-Instruct`
 
+## Setup
+
+```bash
+# Install huggingface-cli
+python3.11 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+```
+
 ## Quantize SauerkrautLM model
 
 ```bash
@@ -27,11 +36,6 @@ This repo contains scripts that can be used to convert the Mistral Nemo 12b Saue
 ## Create Ollama Model
 
 ```bash
-# Install huggingface-cli
-python3.11 -m venv venv
-. venv/bin/activate
-pip install -r requirements.txt
-
 # Create ollama model
 ./start-ollama.sh
 
