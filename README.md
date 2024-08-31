@@ -1,5 +1,7 @@
 # Quantization and Conversion Scripts
 
+This repo contains scripts that can be used to convert the Mistral Nemo 12b SauerkrautLM finetune to `Q8_0` and import it into Ollama.
+
 * Quantized Model: [RichardErkhov/VAGOsolutions_-_SauerkrautLM-Nemo-12b-Instruct-gguf](https://huggingface.co/RichardErkhov/VAGOsolutions_-_SauerkrautLM-Nemo-12b-Instruct-gguf/blob/main/SauerkrautLM-Nemo-12b-Instruct.Q8_0.gguf)
 
 * Unquantized Model: `VAGOsolutions/SauerkrautLM-Nemo-12b-Instruct`
