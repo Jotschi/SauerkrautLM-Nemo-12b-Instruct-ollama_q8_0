@@ -1,2 +1,2 @@
-FROM  ./downloads/SauerkrautLM-Nemo-12B-Instruct-Q8_0.bin
-
+FROM  ./downloads/SauerkrautLM-Nemo-12b-Instruct.Q8_0.gguf
+#FROM  ./downloads/SauerkrautLM-Nemo-12B-Instruct-Q8_0.bin
